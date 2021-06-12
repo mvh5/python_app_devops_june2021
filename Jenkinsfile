@@ -49,5 +49,11 @@ pipeline {
       }
     }
 
+    stage('Publish Hub') {
+      steps {
+        sh 'cat versionImage | xargs ./scripts/upload_hub.sh'
+      }
+    }
+
   }
 }
