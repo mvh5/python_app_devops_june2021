@@ -5,8 +5,6 @@ pipeline {
       steps {
         echo 'Iniciando construccion de proyectos'
         sh 'env'
-        sh '''export PATH=$PATH:/usr/local/bin/
-env'''
       }
     }
 
